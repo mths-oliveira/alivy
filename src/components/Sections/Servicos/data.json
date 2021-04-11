@@ -1,0 +1,30 @@
+{
+  "id": "servicos",
+  "name": "Serviços",
+  "url": "https://source.unsplash.com/random",
+  "content": {
+    "text": "Nosso principal trabalho é cuidar de você. É colocar a sua disposição uma gama generosa de competências técnicas e gerenciais de forma inovadora, para que possamos traduzir todas as suas idéias em realidade de forma viável. Tendo em vista todas as questões tecnológicas, equipamentos e infraestrutura, mas sempre te colocando como centro de todo o processo. Para isso, oferecemos os seguintes serviços:",
+    "services": [
+      {
+        "name": "Projetos",
+        "description": "",
+        "src": "https://source.unsplash.com/user/erondu"
+      },
+      {
+        "name": "Execução",
+        "description": "",
+        "src": "https://source.unsplash.com/user/erondu"
+      },
+      {
+        "name": "Fornecimento de produtos",
+        "description": "",
+        "src": "https://source.unsplash.com/user/erondu"
+      },
+      {
+        "name": "Acompanhamento geral da obra",
+        "description": "",
+        "src": "https://source.unsplash.com/user/erondu"
+      }
+    ]
+  }
+}

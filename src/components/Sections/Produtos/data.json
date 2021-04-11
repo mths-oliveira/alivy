@@ -1,0 +1,19 @@
+{
+  "id": "produtos",
+  "name": "Produtos",
+  "url": "https://source.unsplash.com/random",
+  "content": [
+    {
+      "name": "Ingenium Tecnologia",
+      "logo": "/ingenium.jpg",
+      "link": "https://ingeniumtecnologia.com.br/",
+      "about": "A empresa foi fundada em 2014 e com grande experiência em sistemas de automação, elétricos e de segurança de alto nivel. Tendo participado de grandes projetos corporativos, além de shoppings e estádios de futebol, traz todo know how de tecnologia e gerenciamento de obras de grande porte. Para garantir que o seu sonho de ter um lar com o seu jeito aconteça com o máximo de empatia e bom atendimento, mas sem se esquecer de imprimir alto nivel de qualidade técnica e gerenciamento de custos e cronograma. Vamos garantir que tudo aconteça de forma tranquila, cuidando da compatibilização entre todas as equipes e sistemas. Dialogando sempre com todos os envolvidos e principalmente com você cliente. Nosso maior objetivo é que o resultado do nosso trabalho exceda suas expectativas e a realidade supere em todos os sentidos os seus melhores sonhos."
+    },
+    {
+      "name": "Ingenium Tecnologia",
+      "logo": "/ingenium.jpg",
+      "link": "https://ingeniumtecnologia.com.br/",
+      "about": "A empresa foi fundada em 2014 e com grande experiência em sistemas de automação, elétricos e de segurança de alto nivel. Tendo participado de grandes projetos corporativos, além de shoppings e estádios de futebol, traz todo know how de tecnologia e gerenciamento de obras de grande porte. Para garantir que o seu sonho de ter um lar com o seu jeito aconteça com o máximo de empatia e bom atendimento, mas sem se esquecer de imprimir alto nivel de qualidade técnica e gerenciamento de custos e cronograma. Vamos garantir que tudo aconteça de forma tranquila, cuidando da compatibilização entre todas as equipes e sistemas. Dialogando sempre com todos os envolvidos e principalmente com você cliente. Nosso maior objetivo é que o resultado do nosso trabalho exceda suas expectativas e a realidade supere em todos os sentidos os seus melhores sonhos."
+    }
+  ]
+}

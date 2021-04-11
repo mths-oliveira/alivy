@@ -1,0 +1,74 @@
+{
+  "id": "solucoes",
+  "name": "Soluções",
+  "url": "https://source.unsplash.com/user/erondu",
+  "content": [
+    {
+      "title": "Automação residencial",
+      "subtitles": [
+        {
+          "name": "Iluminação",
+          "src": "https://source.unsplash.com/user/erondu"
+        },
+        {
+          "name": "Cortinas e persianas automáticas",
+          "src": "https://source.unsplash.com/user/erondu"
+        },
+        {
+          "name": "Lareira",
+          "src": "https://source.unsplash.com/user/erondu"
+        },
+        {
+          "name": "Piscina",
+          "src": "https://source.unsplash.com/user/erondu"
+        },
+        {
+          "name": "Piso aquecido",
+          "src": "https://source.unsplash.com/user/erondu"
+        }
+      ]
+    },
+    {
+      "title": "Audio e Video",
+      "subtitles": [
+        { "name": "Telões", "src": "https://source.unsplash.com/user/erondu" },
+        {
+          "name": "Projetores",
+          "src": "https://source.unsplash.com/user/erondu"
+        },
+        {
+          "name": "Receivers",
+          "src": "https://source.unsplash.com/user/erondu"
+        },
+        {
+          "name": "Home Theaters",
+          "src": "https://source.unsplash.com/user/erondu"
+        },
+        {
+          "name": "Caixas de som High End",
+          "src": "https://source.unsplash.com/user/erondu"
+        },
+        {
+          "name": "Flaps e sliders",
+          "src": "https://source.unsplash.com/user/erondu"
+        }
+      ]
+    },
+    {
+      "title": "Segurança e Infraestrutura",
+      "subtitles": [
+        {
+          "name": "Controle de acesso",
+          "src": "https://source.unsplash.com/user/erondu"
+        },
+        { "name": "Câmeras", "src": "https://source.unsplash.com/user/erondu" },
+        { "name": "Alarme", "src": "https://source.unsplash.com/user/erondu" },
+        {
+          "name": "Redes Wifi",
+          "src": "https://source.unsplash.com/user/erondu"
+        },
+        { "name": "Elétrica", "src": "https://source.unsplash.com/user/erondu" }
+      ]
+    }
+  ]
+}
