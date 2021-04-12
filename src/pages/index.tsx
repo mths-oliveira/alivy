@@ -1,16 +1,16 @@
-import { Flex, useDisclosure } from '@chakra-ui/react';
+import { Box, Flex, useDisclosure } from '@chakra-ui/react';
 import { useCallback, useState } from 'react';
 
-import Hero from '../components/Hero';
 import Menu from '../components/Menu';
 import LogoButton from '../components/LogoButton';
 
-import Parceiros from '../components/Sections/Parceiros';
+import Home from '../components/Sections/Home';
 import Sobre from '../components/Sections/Sobre';
+import Parceiros from '../components/Sections/Parceiros';
 import Solucoes from '../components/Sections/Solucoes';
 import Servicos from '../components/Sections/Servicos';
 import Produtos from '../components/Sections/Produtos';
-//import Contato from '../components/Sections/Contato';
+import Contato from '../components/Sections/Contato';
 
 function App() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -68,13 +68,15 @@ function App() {
           onClose={onClose}
           setButtonDisabled={setButtonDisabled}
         />
-        <Hero />
-        <Sobre />
-        <Parceiros />
-        <Servicos />
-        <Solucoes />
-        <Produtos />
-        {/*<Contato />*/}
+        <Home />
+        <Box as="main">
+          <Sobre />
+          <Parceiros />
+          <Servicos />
+          <Solucoes />
+          <Produtos />
+        </Box>
+        <Contato />
       </Flex>
     </>
   );

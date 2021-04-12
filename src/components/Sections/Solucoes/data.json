@@ -31,11 +31,6 @@
     {
       "title": "Audio e Video",
       "subtitles": [
-        { "name": "Telões", "src": "https://source.unsplash.com/user/erondu" },
-        {
-          "name": "Projetores",
-          "src": "https://source.unsplash.com/user/erondu"
-        },
         {
           "name": "Receivers",
           "src": "https://source.unsplash.com/user/erondu"
@@ -50,6 +45,11 @@
         },
         {
           "name": "Flaps e sliders",
+          "src": "https://source.unsplash.com/user/erondu"
+        },
+        { "name": "Telões", "src": "https://source.unsplash.com/user/erondu" },
+        {
+          "name": "Projetores",
           "src": "https://source.unsplash.com/user/erondu"
         }
       ]

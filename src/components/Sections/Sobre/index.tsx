@@ -9,7 +9,7 @@ function Sobre() {
       flexDir="column"
       id={id}
       padding={['4.5rem 3rem', '6rem', '6rem', '6rem', '9rem 12.5rem']}
-      bg="white"
+      as="section"
     >
       <Flex
         width={['100%', '45%']}

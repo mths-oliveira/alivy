@@ -9,7 +9,7 @@ import ParceirosContent from './ParceirosContent';
 
 function Parceiros() {
   return (
-    <Flex flexDir="column" id={id}>
+    <Flex flexDir="column" id={id} as="section">
       <BgImage url={url}>
         <Heading as="h2">{name}</Heading>
       </BgImage>

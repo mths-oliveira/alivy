@@ -20,9 +20,16 @@ interface Props {
   children: JSX.Element[];
   handleSliderRef: any;
   sliderRef: any;
+  spacing?: string;
 }
 
-function Carousel({ i = 0, children, handleSliderRef, sliderRef }: Props) {
+function Carousel({
+  i = 0,
+  children,
+  handleSliderRef,
+  sliderRef,
+  spacing,
+}: Props) {
   const [scrollable, setScrollable] = useState<number[]>([]);
 
   useEffect(() => {
@@ -80,20 +87,15 @@ function Carousel({ i = 0, children, handleSliderRef, sliderRef }: Props) {
 
   return (
     <>
-      <Flex
-        ref={handleSliderRef}
-        overflowX="scroll"
-        className="slider"
-        height={['50vw', '48vw', '18vw']}
-      >
+      <Flex ref={handleSliderRef} overflowX="scroll" className="slider">
         <Stack
           direction="row"
-          spacing={['.75rem', '1rem']}
+          spacing={spacing ? spacing : ['.75rem', '1rem']}
           paddingX={['3rem', '6rem', '6rem', '6rem', '12.5rem']}
         >
           {children}
         </Stack>
-        <Flex width="1px" height="100%" />
+        <Flex width="1px" height="1px" />
       </Flex>
       <Center
         marginTop="4.5rem"

@@ -1,15 +1,15 @@
 import { Flex, Text } from '@chakra-ui/react';
 import { memo } from 'react';
 
-import BgImage from '../BgImage';
-import Heading from '../Heading';
+import BgImage from '../../BgImage';
+import Heading from '../../Heading';
 
 export const idHome = 'home';
 
-function Hero() {
+function Home() {
   return (
-    <Flex flexDir="column" id={idHome} height="100vh">
-      <BgImage url="/home.jpg" as="header">
+    <Flex flexDir="column" id={idHome} height="100vh" as="header">
+      <BgImage url="/home.jpg">
         <Heading as="h1">
           Automação Residencial
           <Text
@@ -30,4 +30,4 @@ function Hero() {
   );
 }
 
-export default memo(Hero);
+export default memo(Home);

@@ -14,7 +14,7 @@ import {
 import { useRouter } from 'next/router';
 import { useCallback, useEffect, useState } from 'react';
 import Sections from '../Sections';
-import { idHome } from '../Hero';
+import { idHome } from '../Sections/Home';
 
 interface Props {
   isOpen: boolean;
@@ -54,16 +54,25 @@ function Menu({ isOpen, onClose, setButtonDisabled }: Props) {
   }, [isDisabled]);
 
   return (
-    <Drawer placement="left" onClose={onClose} isOpen={isOpen} size="xs">
-      <DrawerOverlay transition=".6s ease">
+    <Drawer
+      placement="left"
+      onClose={onClose}
+      isOpen={isOpen}
+      size="xs"
+      closeOnOverlayClick={false}
+    >
+      <DrawerOverlay
+        transition=".6s ease"
+        onDoubleClick={() => {
+          onClose();
+        }}
+      >
         <DrawerContent
           bg="rgba(255,255,255,.85)"
           transition=".3s ease"
           __css={{ backdropFilter: 'blur(3px)' }}
           onMouseLeave={() => {
-            if (window.innerWidth >= 1000) {
-              onClose();
-            }
+            onClose();
           }}
         >
           <DrawerHeader

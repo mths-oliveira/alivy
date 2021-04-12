@@ -16,7 +16,7 @@ function LogoButon({
         bottom={
           isScrollDown ? ['-7rem', '-7rem', 'initial'] : ['1.5rem', 'initial']
         }
-        opacity={[isOpen ? '0' : '1', '1']}
+        opacity={isOpen ? ['0', '1'] : '1'}
         position="fixed"
         zIndex="5"
         left={['initial', 'initial', '0']}
@@ -28,6 +28,9 @@ function LogoButon({
         boxShadow={['sm', 'none']}
         _active={{}}
         _focus={{}}
+        onTouchStart={() => {
+          onOpen();
+        }}
       >
         <Image
           src="/logo.svg"
@@ -43,9 +46,13 @@ function LogoButon({
             'translateY(-10%) translateX(5%)',
           ]}
           transition=" .1s ease"
-          onClick={onOpen}
           onMouseOverCapture={() => {
             if (!buttonDisabled) {
+              onOpen();
+            }
+          }}
+          onClick={() => {
+            if (window.innerWidth < 1000) {
               onOpen();
             }
           }}

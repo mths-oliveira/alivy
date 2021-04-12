@@ -19,8 +19,9 @@ function Produtos() {
 
     sliderRef.current.push(el);
   }, []);
+
   return (
-    <Flex flexDir="column" id={id}>
+    <Flex flexDir="column" id={id} as="section">
       <BgImage url={url}>
         <Heading as="h2">{name}</Heading>
       </BgImage>
@@ -31,21 +32,12 @@ function Produtos() {
         >
           {content.text}
         </Text>
-        <Flex
-          as="ul"
-          width="100%"
-          height="fit-content"
-          listStyleType="none"
-          alignItems="center"
-          justifyContent="space-between"
-          wrap="wrap"
-        >
-          <Carousel handleSliderRef={handleSliderRef} sliderRef={sliderRef}>
-            {content.services.map(({ name, src }, i) => (
-              <Card name={name} src={src} key={`${name}_${i}`} />
-            ))}
-          </Carousel>
-        </Flex>
+
+        <Carousel handleSliderRef={handleSliderRef} sliderRef={sliderRef}>
+          {content.services.map(({ name, src }, i) => (
+            <Card name={name} src={src} key={`${name}_${i}`} />
+          ))}
+        </Carousel>
       </Flex>
     </Flex>
   );
