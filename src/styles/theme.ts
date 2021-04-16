@@ -11,49 +11,56 @@ const breakpoints = createBreakpoints({
 const theme = extendTheme({
   colors: {
     white: '#F8F8F8',
-    black: '#1A1A1A',
-    gold: '#D2A440',
-    text: '#565958',
+    black: '#282828',
+
+    gold: '#E7CD99',
+
+    grayText: '#C6C4C2',
   },
+
   fonts: {
     heading: `'Montserrat', sans-serif`,
     body: `'Montserrat', sans-serif`,
     mono: `'Menlo', monospace`,
   },
   shadows: {
+    xs: '0 4px 14px rgba(0,0,0,.1)',
     sm: '0 4px 14px rgba(0,0,0,.2)',
     line: '0 0 3px rgba(0,0,0,.25)',
   },
   radii: {
     sm: '5px',
   },
-  borders: {
-    sm: '1px solid #D2A440',
-  },
+
   sizes: {
     xs: '12rem',
   },
+
   styles: {
     global: {
       '*': {
         scrollBehavior: 'smooth',
+
         '&::-webkit-scrollbar': {
           width: ['0', '.675rem'],
-          background: 'white',
-        },
-        '&::-webkit-scrollbar-thumb': {
-          backgroundImage:
-            'linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,.5))',
-          borderRadius: '12px',
-        },
-        '&::selection': {
-          background: '#D2A440BB',
-          color: '#F8F8F8',
+          background: '#000',
         },
 
-        letterSpacing: '.1rem',
+        '&::-webkit-scrollbar-thumb': {
+          background: 'gold',
+        },
+
+        '&::selection': {
+          background: 'gold',
+          color: 'black',
+        },
+
         lineHeight: '1.75rem',
         listStyle: 'none',
+      },
+
+      p: {
+        letterSpacing: '1px',
       },
 
       '.slider': {

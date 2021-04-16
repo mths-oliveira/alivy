@@ -5,4 +5,4 @@ import Solucoes from './Solucoes/data.json';
 import Produtos from './Produtos/data.json';
 import Contato from './Contato/data.json';
 
-export default [Sobre, Parceiros, Servicos, Solucoes, Produtos, Contato];
+export default [Sobre, Solucoes, Servicos, Produtos, Parceiros, Contato];

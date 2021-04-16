@@ -3,17 +3,17 @@ import { memo } from 'react';
 
 interface Props extends HeadingProps {}
 
-function Heading({ as, children }: Props) {
+function Heading({ as, children, ...rest }: Props) {
   return (
     <ChakraH
       as={as}
-      color="#FFF"
+      color="rgba(255,255,255,.85)"
       textTransform="uppercase"
       textAlign="center"
       fontWeight={`${as}` === 'h1' ? '700' : '700'}
       fontSize={['2.75rem', '5rem']}
       lineHeight={['5rem', '7rem']}
-      letterSpacing={['.1rem', '.15rem']}
+      {...rest}
     >
       {children}
     </ChakraH>

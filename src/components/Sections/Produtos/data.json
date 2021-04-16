@@ -1,59 +1,47 @@
 {
   "id": "produtos",
   "name": "Produtos",
-  "url": "https://source.unsplash.com/random",
+  "url": "/produtos.jpg",
+  "text": "Esses são alguns dos fabricantes a nivel nacional e internacional, que fornecem os equipamentos necessários para transformar sua casa, em um lar inteligente, e que demonstre todo seu potencial:",
+  "fornecedores": [
+    "Sunfire",
+    "Electrovoice",
+    "Wave",
+    "ON-Q",
+    "Elan",
+    "Pioneer",
+    "Sony",
+    "Denon",
+    "Osdaudio",
+    "Hotfloor",
+    "Somfy",
+    "Wow",
+    "Geonav"
+  ],
   "content": [
     {
-      "name": "Sunfire",
-      "linkId": "b-I2s5zRbHg"
+      "title": "Denon",
+      "linkId": "rz10yd73-_s"
     },
     {
-      "name": "Electrovoice",
-      "linkId": "TJAfLE39ZZ8"
+      "title": "Sony",
+      "linkId": "6oPdDdu1uiQ"
     },
     {
-      "name": "Wave",
-      "linkId": "b-I2s5zRbHg"
+      "title": "Sony",
+      "linkId": "-EhB7dUJ29g"
     },
     {
-      "name": "ON-Q",
-      "linkId": "TJAfLE39ZZ8"
+      "title": "Somfy",
+      "linkId": "Cle2yvJAqHI"
     },
     {
-      "name": "Elan",
-      "linkId": "b-I2s5zRbHg"
+      "title": "Legrand",
+      "linkId": "6cdRqCQetGk"
     },
     {
-      "name": "Pioneer",
-      "linkId": "TJAfLE39ZZ8"
-    },
-    {
-      "name": "Sony",
-      "linkId": "TJAfLE39ZZ8"
-    },
-    {
-      "name": "Denon",
-      "linkId": "TJAfLE39ZZ8"
-    },
-    {
-      "name": "Osdaudio",
-      "linkId": "TJAfLE39ZZ8"
-    },
-    {
-      "name": "Hotfloor",
-      "linkId": "TJAfLE39ZZ8"
-    },
-    {
-      "name": "Somfy",
-      "linkId": "TJAfLE39ZZ8"
-    },
-    {
-      "name": "Wow",
-      "linkId": "TJAfLE39ZZ8"
-    },
-    {
-      "name": "Geonav",
-      "linkId": "TJAfLE39ZZ8"
+      "title": "Electrovoice",
+      "linkId": "dq4rm4sDFuI"
     }
   ]
 }

@@ -1,29 +1,25 @@
 {
   "id": "servicos",
   "name": "Serviços",
-  "url": "https://source.unsplash.com/random",
+  "url": "/servicos.jpg",
   "content": {
     "text": "Nosso principal trabalho é cuidar de você. É colocar a sua disposição uma gama generosa de competências técnicas e gerenciais de forma inovadora, para que possamos traduzir todas as suas idéias em realidade de forma viável. Tendo em vista todas as questões tecnológicas, equipamentos e infraestrutura, mas sempre te colocando como centro de todo o processo. Para isso, oferecemos os seguintes serviços:",
     "services": [
       {
-        "name": "Projetos",
-        "description": "",
-        "src": "https://source.unsplash.com/user/erondu"
+        "title": "Projetos",
+        "text": "Elaboramos em parceria com os arquitetos, os projetos complementares: automação, elétrica, wifi, audio, video, hidráulica, câmeras, alarme e controle de acesso. A compatibilização dos projetos é um dos pilares para o sucesso da obra."
       },
       {
-        "name": "Execução",
-        "description": "",
-        "src": "https://source.unsplash.com/user/erondu"
+        "title": "Execução",
+        "text": "Oferecemos mão de obra técnica qualificada e treinada para implementar todas as disciplinas de forma integrada. Para que nenhum item passe desapercebido, gerando retrabalhos e prejuízos ao logo do processo."
       },
       {
-        "name": "Fornecimento de produtos",
-        "description": "",
-        "src": "https://source.unsplash.com/user/erondu"
+        "title": "Fornecimento de produtos",
+        "text": "Trabalhamos com os melhores fabricantes nacionais e internacionais. Oferecendo assim as melhores soluções, com preços condizentes com a realidade do projeto, e que entregam excelência, qualidade e robustez."
       },
       {
-        "name": "Acompanhamento geral da obra",
-        "description": "",
-        "src": "https://source.unsplash.com/user/erondu"
+        "title": "Acompanhamento geral da obra",
+        "text": "Nossa equipe de engenharia ficará responsável por desenvolver e acompanhar periodicamente um cronograma físico / financeiro em que todas as atividades da obra serão monitoradas de forma fina, garantindo cumprimento dos prazos e redução de custos."
       }
     ]
   }

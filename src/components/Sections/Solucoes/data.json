@@ -1,74 +1,62 @@
 {
   "id": "solucoes",
   "name": "Soluções",
-  "url": "https://source.unsplash.com/user/erondu",
+  "url": "/solucoes.jpg",
   "content": [
     {
       "title": "Automação residencial",
       "subtitles": [
-        {
-          "name": "Iluminação",
-          "src": "https://source.unsplash.com/user/erondu"
-        },
-        {
-          "name": "Cortinas e persianas automáticas",
-          "src": "https://source.unsplash.com/user/erondu"
-        },
-        {
-          "name": "Lareira",
-          "src": "https://source.unsplash.com/user/erondu"
-        },
-        {
-          "name": "Piscina",
-          "src": "https://source.unsplash.com/user/erondu"
-        },
-        {
-          "name": "Piso aquecido",
-          "src": "https://source.unsplash.com/user/erondu"
-        }
+        "Cortinas e persianas automáticas",
+        "Piso aquecido",
+        "Iluminação",
+        "Lareira",
+        "Piscina"
       ]
     },
     {
       "title": "Audio e Video",
       "subtitles": [
-        {
-          "name": "Receivers",
-          "src": "https://source.unsplash.com/user/erondu"
-        },
-        {
-          "name": "Home Theaters",
-          "src": "https://source.unsplash.com/user/erondu"
-        },
-        {
-          "name": "Caixas de som High End",
-          "src": "https://source.unsplash.com/user/erondu"
-        },
-        {
-          "name": "Flaps e sliders",
-          "src": "https://source.unsplash.com/user/erondu"
-        },
-        { "name": "Telões", "src": "https://source.unsplash.com/user/erondu" },
-        {
-          "name": "Projetores",
-          "src": "https://source.unsplash.com/user/erondu"
-        }
+        "Caixas de som High End",
+        "Flaps e sliders",
+        "Home Theaters",
+        "Receivers",
+        "Telões",
+        "Projetores"
       ]
     },
     {
-      "title": "Segurança e Infraestrutura",
-      "subtitles": [
-        {
-          "name": "Controle de acesso",
-          "src": "https://source.unsplash.com/user/erondu"
-        },
-        { "name": "Câmeras", "src": "https://source.unsplash.com/user/erondu" },
-        { "name": "Alarme", "src": "https://source.unsplash.com/user/erondu" },
-        {
-          "name": "Redes Wifi",
-          "src": "https://source.unsplash.com/user/erondu"
-        },
-        { "name": "Elétrica", "src": "https://source.unsplash.com/user/erondu" }
-      ]
+      "title": "Segurança",
+      "subtitles": ["Controle de acesso", "Câmeras", "Alarme"]
+    },
+    {
+      "title": "Infraestrutura",
+      "subtitles": ["Redes Wifi", "Elétrica"]
+    }
+  ],
+  "videos": [
+    {
+      "title": "Somfy",
+      "linkId": "cozYwnDr0yM"
+    },
+    {
+      "title": "Geonav",
+      "linkId": "5GivHrlLcFw"
+    },
+    {
+      "title": "Elan",
+      "linkId": "Wt1Y2O3A-2w"
+    },
+    {
+      "title": "Sony",
+      "linkId": "MkBiG0SbYco"
+    },
+    {
+      "title": "Somfy",
+      "linkId": "SQS65MvK5jo"
+    },
+    {
+      "title": "Amazon",
+      "linkId": "bPCHPiZ6NBA"
     }
   ]
 }

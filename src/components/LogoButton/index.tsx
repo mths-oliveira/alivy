@@ -1,60 +1,75 @@
 import { Button, Center, Image } from '@chakra-ui/react';
+import { useCallback, useEffect, useState } from 'react';
 
 function LogoButon({
-  isToShrink,
   isScrollDown,
   isOpen,
   onOpen,
   buttonDisabled,
+  setIsButtonClicked,
 }: any) {
+  const [isClicked, setIsClicked] = useState(false);
+
+  const handleClick = useCallback(() => {
+    setIsClicked(true);
+    onOpen();
+
+    setTimeout(() => {
+      setIsClicked(false);
+    }, 800);
+  }, []);
+
+  useEffect(() => {
+    setIsButtonClicked(isClicked);
+  }, [isClicked]);
   return (
     <Center width={['100%', '100%', '0']}>
       <Button
-        height={isToShrink ? ['5rem', '8rem'] : ['5rem', '10rem']}
-        width={isToShrink ? ['5rem', '10rem'] : ['5rem', '12rem']}
-        margin={!isToShrink ? ['0 auto', '0'] : ['0 auto', '1rem']}
-        bottom={
-          isScrollDown ? ['-7rem', '-7rem', 'initial'] : ['1.5rem', 'initial']
+        transform={['inherit', 'scale(1.25)', 'inherit']}
+        height={false ? ['5rem', '5rem', '8rem'] : ['5rem', '5rem', '10rem']}
+        width={false ? ['5rem', '5rem', '10rem'] : ['5rem', '5rem', '12rem']}
+        margin={
+          !false ? ['0 auto', '0 auto', '0'] : ['0 auto', '0 auto', '1rem']
         }
-        opacity={isOpen ? ['0', '1'] : '1'}
+        bottom={
+          isScrollDown
+            ? ['-7rem', '-7rem', 'initial']
+            : ['1.5rem', '2.5rem', 'initial']
+        }
+        opacity={isOpen ? ['0', '0', '1'] : '1'}
         position="fixed"
-        zIndex="5"
+        zIndex="20"
         left={['initial', 'initial', '0']}
         top={['initial', 'initial', '0']}
         overflow="hidden"
         transition=".6s ease, opacity .3s ease"
-        bg={['#F8F8F8', 'initial']}
-        borderRadius={['50%', 'initial']}
-        boxShadow={['sm', 'none']}
+        bg={['black', 'black', 'initial']}
+        borderRadius={['50%', '50%', 'initial']}
+        boxShadow={['sm', 'sm', 'none']}
         _active={{}}
         _focus={{}}
-        onTouchStart={() => {
-          onOpen();
-        }}
       >
         <Image
           src="/logo.svg"
-          height={['120%', '100%']}
+          height={['120%', '120%', '100%']}
           width="90%"
           position="absolute"
           zIndex="10"
           objectFit="cover"
           objectPosition="center"
-          opacity=".5"
           transform={[
+            'translateY(-2.5%) translateX(5%)',
             'translateY(-2.5%) translateX(5%)',
             'translateY(-10%) translateX(5%)',
           ]}
           transition=" .1s ease"
           onMouseOverCapture={() => {
             if (!buttonDisabled) {
-              onOpen();
+              handleClick();
             }
           }}
           onClick={() => {
-            if (window.innerWidth < 1000) {
-              onOpen();
-            }
+            handleClick();
           }}
         />
       </Button>

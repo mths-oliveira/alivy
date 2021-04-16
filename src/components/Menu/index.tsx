@@ -20,11 +20,12 @@ interface Props {
   isOpen: boolean;
   onClose: () => void;
   setButtonDisabled: (isDisabled: boolean) => void;
+  isButtonClicked: boolean;
 }
 
 type HandleToggle = (to: string) => void;
 
-function Menu({ isOpen, onClose, setButtonDisabled }: Props) {
+function Menu({ isOpen, onClose, setButtonDisabled, isButtonClicked }: Props) {
   const router = useRouter();
 
   const handleToggle: HandleToggle = useCallback((to) => {
@@ -60,25 +61,15 @@ function Menu({ isOpen, onClose, setButtonDisabled }: Props) {
       isOpen={isOpen}
       size="xs"
       closeOnOverlayClick={false}
-    >
-      <DrawerOverlay
-        transition=".6s ease"
-        onDoubleClick={() => {
+      onOverlayClick={() => {
+        if (!isButtonClicked) {
           onClose();
-        }}
-      >
-        <DrawerContent
-          bg="rgba(255,255,255,.85)"
-          transition=".3s ease"
-          __css={{ backdropFilter: 'blur(3px)' }}
-          onMouseLeave={() => {
-            onClose();
-          }}
-        >
-          <DrawerHeader
-            padding="0 .5rem"
-            __css={{ backdropFilter: 'blur(10px)' }}
-          >
+        }
+      }}
+    >
+      <DrawerOverlay transition=".6s ease">
+        <DrawerContent bg="black" transition=".3s ease">
+          <DrawerHeader padding="0 .5rem">
             <Center width="12rem" height="10rem" overflow="hidden">
               <Image
                 width="100%"
@@ -86,7 +77,6 @@ function Menu({ isOpen, onClose, setButtonDisabled }: Props) {
                 transform="translateY(-10%)"
                 objectFit="cover"
                 objectPosition="center"
-                opacity=".5"
                 src="/logo.svg"
                 cursor="pointer"
                 transition=".3s ease"
@@ -101,7 +91,10 @@ function Menu({ isOpen, onClose, setButtonDisabled }: Props) {
           <DrawerBody as="nav" padding="0">
             <Stack
               as="ul"
-              color="text"
+              color="grayText"
+              fontSize=".75rem"
+              textTransform="uppercase"
+              fontWeight="600"
               flexDir="column"
               listStyleType="none"
               spacing="2px"
@@ -147,10 +140,10 @@ function Menu({ isOpen, onClose, setButtonDisabled }: Props) {
                       },
                     }}
                     _active={{
-                      color: 'white',
+                      color: '#000',
                       transition: 'color .2s .2s',
                       _hover: {
-                        color: 'white',
+                        color: '#000',
                       },
                       _before: {
                         transform: 'scaleY(1)',

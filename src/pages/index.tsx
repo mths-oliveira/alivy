@@ -37,11 +37,13 @@ function App() {
 
   const [buttonDisabled, setButtonDisabled] = useState(false);
 
+  const [isButtonClicked, setIsButtonClicked] = useState(false);
+
   return (
     <>
       <Flex
-        bg="white"
-        color="text"
+        bg="black"
+        color="grayText"
         height="100vh"
         flexDir="column"
         overflowY="auto"
@@ -62,8 +64,10 @@ function App() {
           isOpen={isOpen}
           onOpen={onOpen}
           buttonDisabled={buttonDisabled}
+          setIsButtonClicked={setIsButtonClicked}
         />
         <Menu
+          isButtonClicked={isButtonClicked}
           isOpen={isOpen}
           onClose={onClose}
           setButtonDisabled={setButtonDisabled}
@@ -71,12 +75,12 @@ function App() {
         <Home />
         <Box as="main">
           <Sobre />
-          <Parceiros />
-          <Servicos />
           <Solucoes />
+          <Servicos />
           <Produtos />
+          <Parceiros />
+          <Contato />
         </Box>
-        <Contato />
       </Flex>
     </>
   );
