@@ -15,7 +15,7 @@ function Produtos() {
 
       <Flex
         flexDir="column"
-        padding={['4.5rem 3rem', '6rem', '6rem', '6rem', '8rem 16rem']}
+        padding={['4rem 2rem', '8rem', '8rem', '8rem', '8rem 16rem']}
       >
         <Text
           as="h4"
@@ -23,18 +23,19 @@ function Produtos() {
           lineHeight={['2.25rem', '2.5rem']}
           fontWeight="400"
           marginBottom="3rem"
+          color="gold"
         >
           {content.text}
         </Text>
         {content.services.map(({ title, text }, i) => (
-          <Flex key={`${title}, ${i}`} flexDir="column" marginY="1.5rem">
+          <Flex key={`${title}, ${i}`} flexDir="column" marginY="1rem">
             <ChakraH
               as="h3"
-              fontSize={['2.325em', '3rem']}
+              fontSize={['2.75rem', '3rem']}
               fontFamily="body"
               fontWeight="300"
-              lineHeight={['3.25rem', '3.75rem']}
-              marginY="1.5rem"
+              lineHeight="3.75rem"
+              marginY="1.75rem"
               width="100%"
               color="gold"
             >

@@ -20,13 +20,13 @@ function Contato() {
     >
       <Flex
         flex={1}
-        color="rgba(255,255,255,.85)"
+        color="rgba(255,255,255,.95)"
         bg="rgba(0,0,0,.3)"
         alignItems="center"
         textAlign="center"
         justifyContent="space-between"
         flexDir="column"
-        paddingX={['3rem', '3rem', '0']}
+        paddingX={['1.5rem', '1.5rem', '0']}
       >
         <Center flex={1} paddingY={['6rem', '8rem', '0']}>
           <Stack
@@ -70,7 +70,7 @@ function Contato() {
         width={['100%', '100%', '50%']}
         height="100%"
         minWidth={['auto', 'auto', '46.75rem']}
-        padding={['5rem 3rem', '8rem', '12rem']}
+        padding={['4rem 2rem', '8rem', '8rem', '8rem', '12rem']}
         flexDir="column"
         alignItems="center"
         justifyContent="center"

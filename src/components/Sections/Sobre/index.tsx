@@ -8,7 +8,7 @@ function Sobre() {
     <Flex
       id={id}
       flexDir="column"
-      padding={['5rem 3rem', '6rem', '6rem', '6rem', '8rem 16rem']}
+      padding={['4rem 2rem', '8rem', '8rem', '8rem', '8rem 16rem']}
     >
       <Heading
         color="gold"

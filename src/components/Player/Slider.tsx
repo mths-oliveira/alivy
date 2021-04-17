@@ -18,8 +18,8 @@ function SliderStack({ children, handleScroll, sliderRef, ...rest }: Props) {
     <>
       <Stack
         className="slider"
-        spacing={['.75rem', '1rem']}
-        width="14rem"
+        spacing={['.5rem', '1rem']}
+        width={['100%', '100%', '14rem']}
         flexDir="column"
         direction="column"
         marginX={['auto', 'auto', '1.5rem']}

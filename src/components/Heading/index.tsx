@@ -7,7 +7,7 @@ function Heading({ as, children, ...rest }: Props) {
   return (
     <ChakraH
       as={as}
-      color="rgba(255,255,255,.85)"
+      color="white"
       textTransform="uppercase"
       textAlign="center"
       fontWeight={`${as}` === 'h1' ? '700' : '700'}

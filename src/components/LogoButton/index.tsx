@@ -43,7 +43,7 @@ function LogoButon({
         top={['initial', 'initial', '0']}
         overflow="hidden"
         transition=".6s ease, opacity .3s ease"
-        bg={['black', 'black', 'initial']}
+        bg={['gold', 'gold', 'initial']}
         borderRadius={['50%', '50%', 'initial']}
         boxShadow={['sm', 'sm', 'none']}
         _active={{}}

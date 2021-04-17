@@ -21,7 +21,7 @@ function CardPreview({
   return (
     <Center
       width="100%"
-      height="8rem"
+      height={['10rem', '10rem', '8rem']}
       flexShrink={0}
       fontWeight="600"
       transition=".3s ease"
@@ -36,7 +36,7 @@ function CardPreview({
       bgPosition="center"
       bgSize="cover"
       bgRepeat="no-repeat"
-      color="rgba(255,255,255,.85)"
+      color="rgba(255,255,255,.95)"
       _hover={{ color: 'transparent' }}
     >
       <Heading as="h4" fontSize="1rem">
@@ -52,12 +52,12 @@ function CardPreview({
         left="0"
         transition=".3s ease"
         color={
-          activeIndex === thisIndex ? 'rgba(255,255,255,.85)' : 'transparent'
+          activeIndex === thisIndex ? 'rgba(255,255,255,.95)' : 'transparent'
         }
         opacity={activeIndex === thisIndex ? '1' : '0'}
         bg={activeIndex === thisIndex ? 'rgba(0,0,0,.8)' : 'rgba(0,0,0,.2)'}
         _hover={{
-          color: 'rgba(255,255,255,.85)',
+          color: 'rgba(255,255,255,.95)',
           opacity: '1',
           backdropFilter: 'blur(3px)',
         }}

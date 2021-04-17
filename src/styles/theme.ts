@@ -13,7 +13,8 @@ const theme = extendTheme({
     white: '#F8F8F8',
     black: '#282828',
 
-    gold: '#E7CD99',
+    //gold: '#E7CD99',
+    gold: '#F8F8F8',
 
     grayText: '#C6C4C2',
   },

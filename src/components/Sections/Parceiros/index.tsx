@@ -22,7 +22,7 @@ function Parceiros() {
       <Flex
         as="ul"
         flexDir="column"
-        padding={['5rem 3rem', '8rem', '8rem', '8rem', '8rem 16rem']}
+        padding={['4rem 2rem', '8rem', '8rem', '8rem', '8rem 16rem']}
       >
         <Stack spacing="8rem">
           {content.map(({ about, link, name, logo }) => (
@@ -34,16 +34,20 @@ function Parceiros() {
                 maxWidth="18.75rem"
                 marginBottom="3rem"
               >
-                <Image src={logo} filter="grayScale(100%)" />
+                <Image
+                  src={logo}
+                  filter="grayScale(100%)"
+                  width={['75%', '75%', 'inherit']}
+                />
               </Box>
               <Box>
                 <ChakraH
                   as="h3"
                   width="fit-content"
-                  fontSize={['2.5em', '3rem']}
+                  fontSize="3rem"
                   fontFamily="body"
                   fontWeight="300"
-                  lineHeight={['3.25rem', '3.75rem']}
+                  lineHeight="3.75rem"
                   marginBottom="1.5rem"
                   color="gold"
                 >

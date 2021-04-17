@@ -16,7 +16,7 @@ function Produtos() {
       <Flex flexDir="column">
         <Flex
           padding={[
-            '5rem 3rem 0',
+            '4rem 2rem 0',
             '8rem 8rem 0',
             '8rem 8rem 0',
             '8rem 8rem 0',
@@ -29,6 +29,7 @@ function Produtos() {
             lineHeight="2.5rem"
             fontWeight="400"
             marginBottom="3rem"
+            color="white"
           >
             {text}
           </Text>
@@ -46,7 +47,7 @@ function Produtos() {
         width="100vw"
         height="100vh"
         flexDir={['column', 'column', 'row']}
-        padding={['0', '0', '8rem']}
+        padding={['1rem', '1rem', '8rem']}
       />
     </Flex>
   );
