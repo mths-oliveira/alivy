@@ -16,7 +16,7 @@ const theme = extendTheme({
     //gold: '#E7CD99',
     gold: '#F8F8F8',
 
-    grayText: '#C6C4C2',
+    grayText: '#B4B4B4',
   },
 
   fonts: {

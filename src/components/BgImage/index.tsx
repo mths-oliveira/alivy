@@ -21,7 +21,7 @@ function BgImage({ url, children, as = 'div', mask, ...rest }: Props) {
       bgRepeat="no-repeat"
       {...rest}
     >
-      <Center flex={1} bg={mask ? `${mask}` : 'rgba(0,0,0,0.3)'}>
+      <Center flex={1} bg={mask ? `${mask}` : 'rgba(0,0,0,0.4)'}>
         {children}
       </Center>
     </Flex>

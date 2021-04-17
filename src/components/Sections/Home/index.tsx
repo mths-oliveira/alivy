@@ -9,7 +9,7 @@ export const idHome = 'home';
 function Home() {
   return (
     <Flex flexDir="column" id={idHome} height="100vh" as="header">
-      <BgImage url="/home.webp" mask="rgba(0,0,0,0.2)">
+      <BgImage url="/home.webp" mask="rgba(0,0,0,0.3)">
         <Heading as="h1">
           Automação Residencial
           <Text

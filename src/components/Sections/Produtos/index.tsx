@@ -10,7 +10,7 @@ import { id, name, url, content, text, fornecedores } from './data.json';
 function Produtos() {
   return (
     <Flex flexDir="column" id={id} as="section">
-      <BgImage url={url} mask="rgba(0,0,0,0.2)">
+      <BgImage url={url} mask="rgba(0,0,0,0.3)">
         <Heading as="h2">{name}</Heading>
       </BgImage>
       <Flex flexDir="column">
