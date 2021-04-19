@@ -64,8 +64,8 @@ function Player({ content, ...rest }: Player) {
         currentVideoId={currentId}
         flex={1}
         width={['100%', '100%', 'auto']}
-        maxHeight={['30vh', '30vh', '100%']}
-        minHeight={['30vh', '30vh', '100%']}
+        maxHeight={['27.5vh', '27.5vh', '100%']}
+        minHeight={['27.5vh', '27.5vh', '100%']}
         marginBottom={['1rem', '1rem', '0']}
       />
       <Slider handleScroll={handleScroll} sliderRef={sliderRef}>

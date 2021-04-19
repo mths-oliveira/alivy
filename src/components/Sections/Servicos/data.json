@@ -3,23 +3,23 @@
   "name": "Serviços",
   "url": "/servicos.jpg",
   "content": {
-    "text": "Nosso principal trabalho é cuidar de você. É colocar a sua disposição uma gama generosa de competências técnicas e gerenciais de forma inovadora, para que possamos traduzir todas as suas idéias em realidade de forma viável. Tendo em vista todas as questões tecnológicas, equipamentos e infraestrutura, mas sempre te colocando como centro de todo o processo. Para isso, oferecemos os seguintes serviços:",
+    "text": "Nosso principal trabalho é cuidar de você. É colocar a sua disposição uma gama generosa de competências técnicas e gerenciais de forma inovadora para que possamos traduzir todas as suas ideias em realidade de forma viável, tendo em vista todas as questões tecnológicas, equipamentos e infraestrutura, mas sempre te colocando como centro de todo o processo. Para isso, oferecemos os seguintes serviços:",
     "services": [
       {
         "title": "Projetos",
-        "text": "Elaboramos em parceria com os arquitetos, os projetos complementares: automação, elétrica, wifi, audio, video, hidráulica, câmeras, alarme e controle de acesso. A compatibilização dos projetos é um dos pilares para o sucesso da obra."
+        "text": "Elaboramos em parceria com os arquitetos, os projetos complementares: automação, elétrica, wifi, áudio, vídeo, hidráulica, câmera, alarme e controle de acesso. A compatibilização dos projetos é um dos pilares para o sucesso da obra."
       },
       {
         "title": "Execução",
-        "text": "Oferecemos mão de obra técnica qualificada e treinada para implementar todas as disciplinas de forma integrada. Para que nenhum item passe desapercebido, gerando retrabalhos e prejuízos ao logo do processo."
+        "text": "Oferecemos mão de obra técnica qualificada e treinada para implementar todos os projetos de forma integrada, para que nenhum item passe despercebido gerando retrabalhos e prejuízos ao logo do processo."
       },
       {
         "title": "Fornecimento de produtos",
-        "text": "Trabalhamos com os melhores fabricantes nacionais e internacionais. Oferecendo assim as melhores soluções, com preços condizentes com a realidade do projeto, e que entregam excelência, qualidade e robustez."
+        "text": "Trabalhamos com os melhores fabricantes nacionais e internacionais, oferecendo assim as melhores soluções, com preços condizentes com a realidade do projeto, que entregam excelência, qualidade e robustez."
       },
       {
-        "title": "Acompanhamento geral da obra",
-        "text": "Nossa equipe de engenharia ficará responsável por desenvolver e acompanhar periodicamente um cronograma físico / financeiro em que todas as atividades da obra serão monitoradas de forma fina, garantindo cumprimento dos prazos e redução de custos."
+        "title": "Gestão de obras",
+        "text": "Nossa equipe de engenharia ficará responsável por desenvolver e acompanhar periodicamente um cronograma físico/financeiro em que todas as atividades da obra serão monitoradas de forma detalhada, garantindo cumprimento dos prazos e redução de custos."
       }
     ]
   }

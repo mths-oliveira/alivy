@@ -1,11 +1,4 @@
-import {
-  Flex,
-  Image,
-  Heading as ChakraH,
-  Box,
-  Text,
-  Stack,
-} from '@chakra-ui/react';
+import { Flex, Image, Box, Text, Stack } from '@chakra-ui/react';
 import { memo } from 'react';
 
 import BgImage from '../../BgImage';
@@ -24,35 +17,26 @@ function Parceiros() {
         flexDir="column"
         padding={['4rem 2rem', '8rem', '8rem', '8rem', '8rem 16rem']}
       >
-        <Stack spacing="8rem">
-          {content.map(({ about, link, name, logo }) => (
+        <Stack spacing="4.5rem">
+          {content.map(({ about, link, logo }, i) => (
             <Flex as="li" flexDir="column">
               <Box
                 target="_blank"
                 as="a"
                 href={link}
                 maxWidth="18.75rem"
-                marginBottom="3rem"
+                marginBottom="2.5rem"
+                width={['66%', '66%', 'inherit']}
+                borderRadius="3px"
               >
                 <Image
                   src={logo}
-                  filter="grayScale(100%)"
-                  width={['75%', '75%', 'inherit']}
+                  filter={
+                    i === 1 ? 'grayScale(100%) invert(100%)' : 'grayScale(100%)'
+                  }
                 />
               </Box>
               <Box>
-                <ChakraH
-                  as="h3"
-                  width="fit-content"
-                  fontSize="3rem"
-                  fontFamily="body"
-                  fontWeight="300"
-                  lineHeight="3.75rem"
-                  marginBottom="1.5rem"
-                  color="gold"
-                >
-                  {name}
-                </ChakraH>
                 <Text>{about}</Text>
               </Box>
             </Flex>

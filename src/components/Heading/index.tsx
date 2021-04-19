@@ -9,6 +9,7 @@ function Heading({ as, children, ...rest }: Props) {
       as={as}
       color="white"
       textTransform="uppercase"
+      letterSpacing=".1rem"
       textAlign="center"
       fontWeight={`${as}` === 'h1' ? '700' : '700'}
       fontSize={['2.75rem', '5rem']}

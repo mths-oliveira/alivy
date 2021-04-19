@@ -19,10 +19,9 @@ function Produtos() {
       >
         <Text
           as="h4"
-          fontSize={['1.25rem', '1.5rem']}
-          lineHeight={['2.25rem', '2.5rem']}
+          fontSize="1.25rem"
           fontWeight="400"
-          marginBottom="3rem"
+          marginBottom="1rem"
           color="gold"
         >
           {content.text}
@@ -31,11 +30,10 @@ function Produtos() {
           <Flex key={`${title}, ${i}`} flexDir="column" marginY="1rem">
             <ChakraH
               as="h3"
-              fontSize={['2.75rem', '3rem']}
+              fontSize="2.5rem"
               fontFamily="body"
               fontWeight="300"
-              lineHeight="3.75rem"
-              marginY="1.75rem"
+              marginY="1.5rem"
               width="100%"
               color="gold"
             >

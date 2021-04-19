@@ -14,13 +14,13 @@ function Contato() {
       bg="black"
       bgImage={`url(${url})`}
       bgSize="cover"
-      bgPosition="-25vw 0"
+      bgPosition={['-75vw 20vh', '-25vw 0', '-25vw 0']}
       bgAttachment="fixed"
       flexDir={['column-reverse', 'column-reverse', 'row']}
     >
       <Flex
         flex={1}
-        color="rgba(255,255,255,.95)"
+        color="rgba(255,255,255,.9)"
         bg="rgba(0,0,0,.3)"
         alignItems="center"
         textAlign="center"
@@ -28,30 +28,33 @@ function Contato() {
         flexDir="column"
         paddingX={['1.5rem', '1.5rem', '0']}
       >
-        <Center flex={1} paddingY={['6rem', '8rem', '0']}>
+        <Center flex={1} paddingY={['5rem', '5rem', '0']}>
           <Stack
             spacing={['3rem', '4rem', '4.5rem']}
             direction="row"
             as="ul"
             listStyleType="none"
-            fontSize={['2rem', '2.5rem', '3rem']}
+            fontSize={['2.5rem', '2.5rem', '3rem']}
           >
             <Flex as="li">
               <a
                 target="_blank"
-                href="https://api.whatsapp.com/send?phone=5531"
+                href="https://api.whatsapp.com/send?phone=5531996171871"
               >
                 <FaWhatsapp />
               </a>
             </Flex>
 
             <Flex as="li">
-              <a target="_blank" href="mailto:">
+              <a target="_blank" href="mailto:bca@alivy.com">
                 <FiMail />
               </a>
             </Flex>
             <Flex as="li">
-              <a target="_blank" href="https://www.google.com.br/maps/place/">
+              <a
+                target="_blank"
+                href="https://www.google.com/maps/place/R.+Santa+Rita+Dur%C3%A3o,+321+-+Savassi,+Belo+Horizonte+-+MG,+30140-111/@-19.9362424,-43.9309207,17z/data=!3m1!4b1!4m5!3m4!1s0xa699c14348cfaf:0x157fa50340f472de!8m2!3d-19.9362424!4d-43.928732"
+              >
                 <FiMapPin />
               </a>
             </Flex>
@@ -70,16 +73,17 @@ function Contato() {
         width={['100%', '100%', '50%']}
         height="100%"
         minWidth={['auto', 'auto', '46.75rem']}
-        padding={['4rem 2rem', '8rem', '8rem', '8rem', '12rem']}
+        padding={['3rem 2rem', '8rem', '8rem', '8rem', '12rem']}
         flexDir="column"
         alignItems="center"
         justifyContent="center"
       >
         <Heading
           as="h2"
-          fontSize={['3rem', '5rem', '5rem']}
+          textTransform={['uppercase', 'uppercase', 'inherit']}
+          fontSize={['3rem', '3rem', '5rem']}
           fontWeight="700"
-          marginBottom={['1.5rem', '3rem', '3rem']}
+          marginBottom={['1rem', '1rem', '2rem']}
         >
           {name}
         </Heading>

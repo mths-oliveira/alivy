@@ -11,26 +11,34 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Head>
         <meta charSet="UTF-8" />
         <meta property="og:type" content="website" />
-
         <meta property="og:site_name" content="Alivy" />
-        <meta property="og:title" content="Alivy" />
-        <title>Alivy</title>
-
-        <meta property="og:description" content="" />
-        <meta name="description" content="" />
-
-        <meta property="og:url" content="" />
-        <meta name="keywords" content="" />
-        <meta name="google-site-verification" content="" />
-
+        <meta
+          property="og:title"
+          content="Automação residencial | Alivy | Transforme a sua casa em um lar inteligente!"
+        />
+        <title>
+          Automação residencial | Alivy | Transforme a sua casa em um lar
+          inteligente!
+        </title>
+        <meta
+          property="og:description"
+          content="Automação residencial, Áudio, Vídeo, Segurança e Infraestrutura. Temos tudo o que você precisa para ter uma Casa inteligente."
+        />
+        <meta
+          name="description"
+          content="Automação residencial, Áudio, Vídeo, Segurança e Infraestrutura. Temos tudo o que você precisa para ter uma Casa inteligente."
+        />
+        <meta property="og:url" content="www.alivyautomacao.com.br" />
+        <meta
+          name="keywords"
+          content="automação residencial, áudio, vídeo, segurança, infraestrutura, casa inteligente"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
         <meta name="robots" content="index" />
         <meta name="googlebot" content="index" />
         <meta name="author" content="Matheus Oliveira" />
         <meta name="creator" content="Matheus Oliveira" />
         <meta name="publisher" content="Matheus Oliveira" />
-
         <link rel="icon" href="/logo.svg" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link

@@ -2,21 +2,18 @@
   "id": "produtos",
   "name": "Produtos",
   "url": "/produtos.jpg",
-  "text": "Esses são alguns dos fabricantes a nivel nacional e internacional, que fornecem os equipamentos necessários para transformar sua casa, em um lar inteligente, e que demonstre todo seu potencial:",
+  "text": "Esses são alguns dos fabricantes a nível nacional e internacional, que fornecem os equipamentos necessários para transformar sua casa em um lar inteligente, e que demonstre todo seu potencial:",
   "fornecedores": [
-    "Sunfire",
-    "Electrovoice",
-    "Wave",
-    "ON-Q",
-    "Elan",
-    "Pioneer",
-    "Sony",
-    "Denon",
-    "Osdaudio",
-    "Hotfloor",
-    "Somfy",
-    "Wow",
-    "Geonav"
+    "sunfire.png",
+    "electrovoice.png",
+    "/legrand.png",
+    "pioneer.png",
+    "sony.png",
+    "denon.png",
+    "osdaudio.jpg",
+    "hotfloor.png",
+    "somfy.svg",
+    "geonav.png"
   ],
   "content": [
     {

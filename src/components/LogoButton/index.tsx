@@ -26,8 +26,8 @@ function LogoButon({
     <Center width={['100%', '100%', '0']}>
       <Button
         transform={['inherit', 'scale(1.25)', 'inherit']}
-        height={false ? ['5rem', '5rem', '8rem'] : ['5rem', '5rem', '10rem']}
-        width={false ? ['5rem', '5rem', '10rem'] : ['5rem', '5rem', '12rem']}
+        height={false ? ['5rem', '5rem', '8rem'] : ['5rem', '5rem', '9rem']}
+        width={false ? ['5rem', '5rem', '10rem'] : ['5rem', '5rem', '11rem']}
         margin={
           !false ? ['0 auto', '0 auto', '0'] : ['0 auto', '0 auto', '1rem']
         }

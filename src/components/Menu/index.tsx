@@ -70,7 +70,7 @@ function Menu({ isOpen, onClose, setButtonDisabled, isButtonClicked }: Props) {
       <DrawerOverlay transition=".6s ease">
         <DrawerContent bg="black" transition=".3s ease">
           <DrawerHeader padding="0 .5rem">
-            <Center width="12rem" height="10rem" overflow="hidden">
+            <Center width="11rem" height="9rem" overflow="hidden">
               <Image
                 width="100%"
                 height="100%"

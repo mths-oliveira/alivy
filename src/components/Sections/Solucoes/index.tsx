@@ -15,17 +15,16 @@ function Solucoes() {
       </BgImage>
       <Flex
         flexDir="column"
-        padding={['4rem 2rem', '8rem', '8rem', '8rem', '8rem 16rem 0']}
+        padding={['2rem', '8rem', '8rem', '8rem', '8rem 16rem 0']}
       >
-        <Stack spacing={['2rem', '2rem', '3rem']}>
+        <Stack spacing={['1.5rem', '1.5rem', '3rem']}>
           {content.map(({ title, subtitles }, i) => (
             <Flex key={`${title}, ${i}`} flexDir="column">
               <ChakraH
                 as="h3"
-                fontSize={['2.75em', '3rem']}
+                fontSize="2.5em"
                 fontFamily="body"
                 fontWeight="300"
-                lineHeight="3.75rem"
                 marginY="1.5rem"
                 width="100%"
                 color="gold"
@@ -46,7 +45,7 @@ function Solucoes() {
         width="100%"
         height="100vh"
         flexDir={['column', 'column', 'row']}
-        padding={['1rem', '1rem', '8rem']}
+        padding={['1.5rem', '8rem', '8rem']}
       />
     </Flex>
   );

@@ -14,8 +14,8 @@ function Sobre() {
         color="gold"
         fontFamily="body"
         fontWeight="300"
-        marginBottom="2rem"
-        fontSize="3rem"
+        marginBottom="1.25rem"
+        fontSize={['2.5rem', '2.75rem']}
       >
         {title}
       </Heading>

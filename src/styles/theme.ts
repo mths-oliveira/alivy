@@ -13,7 +13,6 @@ const theme = extendTheme({
     white: '#F8F8F8',
     black: '#282828',
 
-    //gold: '#E7CD99',
     gold: '#F8F8F8',
 
     grayText: '#B4B4B4',
@@ -34,7 +33,7 @@ const theme = extendTheme({
   },
 
   sizes: {
-    xs: '12rem',
+    xs: '11rem',
   },
 
   styles: {
