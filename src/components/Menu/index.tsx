@@ -9,50 +9,50 @@ import {
   Image,
   Link,
   Stack,
-} from '@chakra-ui/react';
+} from "@chakra-ui/react"
 
-import { useRouter } from 'next/router';
-import { useCallback, useEffect, useState } from 'react';
-import Sections from '../Sections';
-import { idHome } from '../Sections/Home';
+import { useRouter } from "next/router"
+import { useCallback, useEffect, useState } from "react"
+import Sections from "../Sections"
+import { idHome } from "../Sections/Home"
 
 interface Props {
-  isOpen: boolean;
-  onClose: () => void;
-  setButtonDisabled: (isDisabled: boolean) => void;
-  isButtonClicked: boolean;
+  isOpen: boolean
+  onClose: () => void
+  setButtonDisabled: (isDisabled: boolean) => void
+  isButtonClicked: boolean
 }
 
-type HandleToggle = (to: string) => void;
+type HandleToggle = (to: string) => void
 
 function Menu({ isOpen, onClose, setButtonDisabled, isButtonClicked }: Props) {
-  const router = useRouter();
+  const router = useRouter()
 
   const handleToggle: HandleToggle = useCallback((to) => {
-    onClose();
+    onClose()
 
     setTimeout(() => {
-      router.push(to);
-    }, 300);
-  }, []);
+      router.push(to)
+    }, 300)
+  }, [])
 
   const handleActive = useCallback((target) => {
-    target.setAttribute('data-active', 'true');
-  }, []);
+    target.setAttribute("data-active", "true")
+  }, [])
 
-  const [isDisabled, setIsDisabled] = useState(false);
+  const [isDisabled, setIsDisabled] = useState(false)
 
   const handleDisabled = useCallback(() => {
-    setIsDisabled(true);
+    setIsDisabled(true)
 
     setTimeout(() => {
-      setIsDisabled(false);
-    }, 800);
-  }, []);
+      setIsDisabled(false)
+    }, 800)
+  }, [])
 
   useEffect(() => {
-    setButtonDisabled(isDisabled);
-  }, [isDisabled]);
+    setButtonDisabled(isDisabled)
+  }, [isDisabled])
 
   return (
     <Drawer
@@ -63,12 +63,12 @@ function Menu({ isOpen, onClose, setButtonDisabled, isButtonClicked }: Props) {
       closeOnOverlayClick={false}
       onOverlayClick={() => {
         if (!isButtonClicked) {
-          onClose();
+          onClose()
         }
       }}
     >
-      <DrawerOverlay transition=".6s ease">
-        <DrawerContent bg="black" transition=".3s ease">
+      <DrawerOverlay>
+        <DrawerContent bg="black">
           <DrawerHeader padding="0 .5rem">
             <Center width="11rem" height="9rem" overflow="hidden">
               <Image
@@ -80,10 +80,10 @@ function Menu({ isOpen, onClose, setButtonDisabled, isButtonClicked }: Props) {
                 src="/logo.svg"
                 cursor="pointer"
                 transition=".3s ease"
-                _hover={{ transform: 'scale(1.05) translateY(-10%)' }}
+                _hover={{ transform: "scale(1.05) translateY(-10%)" }}
                 onClick={() => {
-                  handleDisabled();
-                  handleToggle(`#${idHome}`);
+                  handleDisabled()
+                  handleToggle(`#${idHome}`)
                 }}
               />
             </Center>
@@ -110,45 +110,44 @@ function Menu({ isOpen, onClose, setButtonDisabled, isButtonClicked }: Props) {
                     letterSpacing=".1rem"
                     transition=" .3s ease"
                     onClick={({ target }) => {
-                      handleActive(target);
+                      handleActive(target)
 
                       setTimeout(
                         () => {
-                          handleToggle(`#${id}`);
+                          handleToggle(`#${id}`)
                         },
                         window.innerWidth >= 1000 ? 300 : 800
-                      );
+                      )
                     }}
                     position="relative"
                     _before={{
                       content: `''`,
-                      position: 'absolute',
+                      position: "absolute",
                       top: 0,
                       left: 0,
                       zIndex: -1,
-                      height: '100%',
-                      width: '3px',
-                      background: 'gold',
-                      transform: 'scaleY(0)',
+                      height: "100%",
+                      width: "3px",
+                      background: "gold",
+                      transform: "scaleY(0)",
                       transition:
-                        'transform .2s .3s, width .6s cubic-bezier(1,0,0,1)',
+                        "transform .2s, width .4s cubic-bezier(1,0,0,1)",
                     }}
                     _hover={{
-                      color: 'gold',
+                      color: "gold",
                       _before: {
-                        transform: 'scaleY(1)',
+                        transform: "scaleY(1)",
                       },
                     }}
                     _active={{
-                      color: '#000',
-                      transition: 'color .2s .2s',
+                      color: "#000",
+                      transition: "color .2s .2s",
                       _hover: {
-                        color: '#000',
+                        color: "#000",
                       },
                       _before: {
-                        transform: 'scaleY(1)',
-                        width: '100%',
-                        transition: 'width .3s .3s transform .3s',
+                        transform: "scaleY(1)",
+                        width: "100%",
                       },
                     }}
                   >
@@ -161,7 +160,7 @@ function Menu({ isOpen, onClose, setButtonDisabled, isButtonClicked }: Props) {
         </DrawerContent>
       </DrawerOverlay>
     </Drawer>
-  );
+  )
 }
 
-export default Menu;
+export default Menu
